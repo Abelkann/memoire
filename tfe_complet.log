@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.30)  3 JUL 2023 15:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2023.6.30)  3 JUL 2023 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**tfe_complet.tex
+**tfe_complet
 (./tfe_complet.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./pream.tex
@@ -158,10 +158,10 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: dvips.def on input line 107.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 ))
 \Gin@req@height=\dimen157
 \Gin@req@width=\dimen158
@@ -813,10 +813,15 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen166
 \Gm@dimlist=\toks25
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count288
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2022-01-12 L3 backend support: dvips
 \l__pdf_internal_box=\box52
+\g__pdf_backend_object_int=\count288
+\l__pdf_backend_content_box=\box53
+\l__pdf_backend_model_box=\box54
+\g__pdf_backend_annotation_int=\count289
+\g__pdf_backend_link_int=\count290
+\g__pdf_backend_link_sf_int=\count291
 )
 (./tfe_complet.aux)
 \openout1 = `tfe_complet.aux'.
@@ -883,29 +888,6 @@ File: fmxfutm.fd futm-extension
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Info: Redefining \degres on input line 2.
 LaTeX Info: Redefining \up on input line 2.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
-\scratchdimen=\dimen167
-\scratchbox=\box53
-\nofMPsegments=\count290
-\nofMParguments=\count291
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count292
-\MPscratchDim=\dimen168
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
-\everyMPtoPDFconversion=\toks27
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 LaTeX Font Info:    Redeclaring math symbol \iintop on input line 2.
 LaTeX Font Info:    Redeclaring math symbol \iiintop on input line 2.
 LaTeX Font Info:    Redeclaring math symbol \oiintop on input line 2.
@@ -923,14 +905,11 @@ Type  H <return>  for immediate help.
                                                   
 l.2 \begin{document}
                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: dvips
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -963,10 +942,13 @@ or  <return>  to continue without it.
 
 (./chap1.tex
 Chapitre 1.
+
+LaTeX Warning: Citation `edf89' on page 1 undefined on input line 13.
+
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+]
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
@@ -980,9 +962,7 @@ Type  H <return>  for immediate help.
                                                   
 l.41 					\begin{itemize}
                          
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 
 ! LaTeX Error: There's no line here to end.
 
@@ -993,10 +973,7 @@ Type  H <return>  for immediate help.
 l.49 L
       es systèmes de mise à la terre constituent en outre un moyen de dér...
 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
@@ -1018,29 +995,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+[2])
+Underfull \hbox (badness 10000) in paragraph at lines 67--4
 
  []
 
-)
 No file tfe_complet.bbl.
-[3] (./tfe_complet.aux) ) 
-Here is how much of TeX's memory you used:
- 6357 strings out of 478287
- 93600 string characters out of 5849289
- 395468 words of memory out of 5000000
- 24474 multiletter control sequences out of 15000+600000
- 505756 words of font info for 48 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 60i,5n,65p,594b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r
-.enc}</usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on tfe_complet.pdf (3 pages, 41104 bytes).
-PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+[3] (./tfe_complet.aux)
 
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5933 strings out of 478288
+ 87564 string characters out of 5849315
+ 389954 words of memory out of 5000000
+ 24074 multiletter control sequences out of 15000+600000
+ 503609 words of font info for 38 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 60i,5n,65p,590b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on tfe_complet.dvi (3 pages, 7700 bytes).
